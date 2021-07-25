@@ -1,0 +1,1507 @@
+-- Gui to Lua
+-- Version: 3.2
+ 
+-- Instances:
+ 
+local OmenGui = Instance.new("ScreenGui")
+local Bar = Instance.new("ImageLabel")
+local LayerBar = Instance.new("Frame")
+local Frame = Instance.new("ImageLabel")
+local OwlHubTextButton = Instance.new("TextButton")
+local FCTextButton = Instance.new("TextButton")
+local KATTextButton = Instance.new("TextButton")
+local MCTextButton = Instance.new("TextButton")
+local IYTextButton = Instance.new("TextButton")
+local FGTextButton = Instance.new("TextButton")
+local BtoolsTextButton = Instance.new("TextButton")
+local DHTextButton = Instance.new("TextButton")
+local VHHUBTextButton = Instance.new("TextButton")
+local ExecuteTextButton = Instance.new("TextButton")
+local ClearTextButton = Instance.new("TextButton")
+local InjectTextButton = Instance.new("TextButton")
+local Editor = Instance.new("Frame")
+local Editor_2 = Instance.new("ScrollingFrame")
+local Lines = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Source = Instance.new("TextBox")
+local Globals = Instance.new("TextLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Keywords = Instance.new("TextLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local Numbers = Instance.new("TextLabel")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local Remotes = Instance.new("TextLabel")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local Strings = Instance.new("TextLabel")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local Tokens = Instance.new("TextLabel")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local Comments = Instance.new("TextLabel")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local UICorner = Instance.new("UICorner")
+local SettingsTextButton = Instance.new("TextButton")
+local Logo = Instance.new("ImageLabel")
+local VersionText = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local SettingFrame = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local TextButton_3 = Instance.new("TextButton")
+ 
+--Properties:
+ 
+OmenGui.Name = "OmenGui"
+OmenGui.Parent = game.ServerStorage
+ 
+Bar.Name = "Bar"
+Bar.Parent = OmenGui
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.BackgroundTransparency = 1.000
+Bar.Position = UDim2.new(0.282805443, 0, 0.0655021816, 0)
+Bar.Size = UDim2.new(0, 790, 0, 39)
+Bar.ZIndex = 3
+Bar.Image = "rbxassetid://3570695787"
+Bar.ImageColor3 = Color3.fromRGB(42, 42, 42)
+Bar.ScaleType = Enum.ScaleType.Slice
+Bar.SliceCenter = Rect.new(100, 100, 100, 100)
+Bar.SliceScale = 0.120
+ 
+LayerBar.Name = "LayerBar"
+LayerBar.Parent = Bar
+LayerBar.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+LayerBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+LayerBar.BorderSizePixel = 0
+LayerBar.Position = UDim2.new(-0.00126582279, 0, 0.974838853, 0)
+LayerBar.Size = UDim2.new(0, 791, 0, 1)
+LayerBar.ZIndex = 3
+ 
+Frame.Name = "Frame"
+Frame.Parent = Bar
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(-0.000836670399, 0, -0.00241905451, 0)
+Frame.Size = UDim2.new(0, 792, 0, 358)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(42, 42, 42)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+ 
+OwlHubTextButton.Name = "OwlHubTextButton"
+OwlHubTextButton.Parent = Frame
+OwlHubTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OwlHubTextButton.BackgroundTransparency = 1.000
+OwlHubTextButton.Position = UDim2.new(0.87215817, 0, 0.643460333, 0)
+OwlHubTextButton.Size = UDim2.new(0, 93, 0, 26)
+OwlHubTextButton.Font = Enum.Font.SourceSans
+OwlHubTextButton.Text = "Owl Hub"
+OwlHubTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OwlHubTextButton.TextScaled = true
+OwlHubTextButton.TextSize = 24.000
+OwlHubTextButton.TextWrapped = true
+ 
+FCTextButton.Name = "FCTextButton"
+FCTextButton.Parent = Frame
+FCTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FCTextButton.BackgroundTransparency = 1.000
+FCTextButton.Position = UDim2.new(0.87215817, 0, 0.141598701, 0)
+FCTextButton.Size = UDim2.new(0, 93, 0, 26)
+FCTextButton.Font = Enum.Font.SourceSans
+FCTextButton.Text = "Free Cam"
+FCTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FCTextButton.TextScaled = true
+FCTextButton.TextSize = 24.000
+FCTextButton.TextWrapped = true
+ 
+KATTextButton.Name = "KAT!TextButton"
+KATTextButton.Parent = Frame
+KATTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KATTextButton.BackgroundTransparency = 1.000
+KATTextButton.Position = UDim2.new(0.87215817, 0, 0.571765959, 0)
+KATTextButton.Size = UDim2.new(0, 93, 0, 26)
+KATTextButton.Font = Enum.Font.SourceSans
+KATTextButton.Text = "KAT!"
+KATTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+KATTextButton.TextScaled = true
+KATTextButton.TextSize = 24.000
+KATTextButton.TextWrapped = true
+ 
+MCTextButton.Name = "MCTextButton"
+MCTextButton.Parent = Frame
+MCTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MCTextButton.BackgroundTransparency = 1.000
+MCTextButton.Position = UDim2.new(0.87215817, 0, 0.500071585, 0)
+MCTextButton.Size = UDim2.new(0, 93, 0, 26)
+MCTextButton.Font = Enum.Font.SourceSans
+MCTextButton.Text = "MeepCity"
+MCTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MCTextButton.TextScaled = true
+MCTextButton.TextSize = 24.000
+MCTextButton.TextWrapped = true
+ 
+IYTextButton.Name = "IYTextButton"
+IYTextButton.Parent = Frame
+IYTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYTextButton.BackgroundTransparency = 1.000
+IYTextButton.Position = UDim2.new(0.87215817, 0, 0.428377211, 0)
+IYTextButton.Size = UDim2.new(0, 93, 0, 26)
+IYTextButton.Font = Enum.Font.SourceSans
+IYTextButton.Text = "IY"
+IYTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+IYTextButton.TextScaled = true
+IYTextButton.TextSize = 24.000
+IYTextButton.TextWrapped = true
+ 
+FGTextButton.Name = "FGTextButton"
+FGTextButton.Parent = Frame
+FGTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FGTextButton.BackgroundTransparency = 1.000
+FGTextButton.Position = UDim2.new(0.87215817, 0, 0.356682658, 0)
+FGTextButton.Size = UDim2.new(0, 93, 0, 26)
+FGTextButton.Font = Enum.Font.SourceSans
+FGTextButton.Text = "FG"
+FGTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FGTextButton.TextScaled = true
+FGTextButton.TextSize = 24.000
+FGTextButton.TextWrapped = true
+ 
+BtoolsTextButton.Name = "BtoolsTextButton"
+BtoolsTextButton.Parent = Frame
+BtoolsTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BtoolsTextButton.BackgroundTransparency = 1.000
+BtoolsTextButton.Position = UDim2.new(0.87215817, 0, 0.213293374, 0)
+BtoolsTextButton.Size = UDim2.new(0, 93, 0, 26)
+BtoolsTextButton.Font = Enum.Font.SourceSans
+BtoolsTextButton.Text = "Btools"
+BtoolsTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BtoolsTextButton.TextScaled = true
+BtoolsTextButton.TextSize = 24.000
+BtoolsTextButton.TextWrapped = true
+ 
+DHTextButton.Name = "DHTextButton"
+DHTextButton.Parent = Frame
+DHTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DHTextButton.BackgroundTransparency = 1.000
+DHTextButton.Position = UDim2.new(0.87215817, 0, 0.284988046, 0)
+DHTextButton.Size = UDim2.new(0, 93, 0, 26)
+DHTextButton.Font = Enum.Font.SourceSans
+DHTextButton.Text = "DarkHub"
+DHTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+DHTextButton.TextScaled = true
+DHTextButton.TextSize = 24.000
+DHTextButton.TextWrapped = true
+ 
+VHHUBTextButton.Name = "VHHUBTextButton"
+VHHUBTextButton.Parent = Frame
+VHHUBTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHHUBTextButton.BackgroundTransparency = 1.000
+VHHUBTextButton.Position = UDim2.new(0.87215817, 0, 0.715154707, 0)
+VHHUBTextButton.Size = UDim2.new(0, 93, 0, 26)
+VHHUBTextButton.Font = Enum.Font.SourceSans
+VHHUBTextButton.Text = "VG HUB"
+VHHUBTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+VHHUBTextButton.TextScaled = true
+VHHUBTextButton.TextSize = 24.000
+VHHUBTextButton.TextWrapped = true
+ 
+ExecuteTextButton.Name = "ExecuteTextButton"
+ExecuteTextButton.Parent = Frame
+ExecuteTextButton.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+ExecuteTextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteTextButton.Position = UDim2.new(0.0517676771, 0, 0.860335171, 0)
+ExecuteTextButton.Size = UDim2.new(0, 139, 0, 39)
+ExecuteTextButton.Font = Enum.Font.SourceSans
+ExecuteTextButton.Text = "Execute"
+ExecuteTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteTextButton.TextSize = 36.000
+ExecuteTextButton.TextWrapped = true
+ 
+ClearTextButton.Name = "ClearTextButton"
+ClearTextButton.Parent = Frame
+ClearTextButton.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+ClearTextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ClearTextButton.Position = UDim2.new(0.246212125, 0, 0.860335171, 0)
+ClearTextButton.Size = UDim2.new(0, 139, 0, 39)
+ClearTextButton.Font = Enum.Font.SourceSans
+ClearTextButton.Text = "Clear"
+ClearTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClearTextButton.TextSize = 36.000
+ClearTextButton.TextWrapped = true
+ 
+InjectTextButton.Name = "InjectTextButton"
+InjectTextButton.Parent = Frame
+InjectTextButton.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+InjectTextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InjectTextButton.Position = UDim2.new(0.683080792, 0, 0.860335171, 0)
+InjectTextButton.Size = UDim2.new(0, 139, 0, 39)
+InjectTextButton.Font = Enum.Font.SourceSans
+InjectTextButton.Text = "Attach"
+InjectTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+InjectTextButton.TextSize = 36.000
+InjectTextButton.TextWrapped = true
+ 
+Editor.Name = "Editor"
+Editor.Parent = Frame
+Editor.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Editor.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Editor.BorderSizePixel = 0
+Editor.Position = UDim2.new(0.0480000004, 0, 0.142000005, 0)
+Editor.Size = UDim2.new(0, 642, 0, 245)
+ 
+Editor_2.Name = "Editor"
+Editor_2.Parent = Editor
+Editor_2.Active = true
+Editor_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Editor_2.BackgroundTransparency = 1.000
+Editor_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Editor_2.BorderSizePixel = 0
+Editor_2.Position = UDim2.new(0.0209999923, 0, 0.0359999686, 0)
+Editor_2.Size = UDim2.new(0, 620, 0, 222)
+Editor_2.ZIndex = 3
+Editor_2.BottomImage = ""
+Editor_2.CanvasSize = UDim2.new(3, 0, 3, 0)
+Editor_2.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+Editor_2.MidImage = "rbxassetid://148970562"
+Editor_2.ScrollBarThickness = 5
+Editor_2.TopImage = ""
+ 
+Lines.Name = "Lines"
+Lines.Parent = Editor_2
+Lines.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+Lines.BackgroundTransparency = 1.000
+Lines.BorderSizePixel = 0
+Lines.Size = UDim2.new(0, 18, 0, 2294506)
+Lines.ZIndex = 6
+Lines.Font = Enum.Font.Code
+Lines.Text = "1\\n"
+Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lines.TextSize = 14.000
+Lines.TextYAlignment = Enum.TextYAlignment.Top
+ 
+UIAspectRatioConstraint.Parent = Lines
+UIAspectRatioConstraint.AspectRatio = 0.000
+ 
+Source.Name = "Source"
+Source.Parent = Editor_2
+Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Source.BackgroundTransparency = 1.000
+Source.BorderSizePixel = 0
+Source.Position = UDim2.new(0, 39, 0, 0)
+Source.Size = UDim2.new(0, 4983, 0, 275132)
+Source.ZIndex = 3
+Source.ClearTextOnFocus = false
+Source.Font = Enum.Font.Code
+Source.MultiLine = true
+Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
+Source.Text = "--Thank You for useing Omen!"
+Source.TextColor3 = Color3.fromRGB(255, 255, 255)
+Source.TextSize = 14.000
+Source.TextStrokeColor3 = Color3.fromRGB(35, 35, 35)
+Source.TextXAlignment = Enum.TextXAlignment.Left
+Source.TextYAlignment = Enum.TextYAlignment.Top
+ 
+Globals.Name = "Globals"
+Globals.Parent = Source
+Globals.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Globals.BackgroundTransparency = 1.000
+Globals.Size = UDim2.new(0, 4983, 0, 275132)
+Globals.ZIndex = 5
+Globals.Font = Enum.Font.Code
+Globals.Text = ""
+Globals.TextColor3 = Color3.fromRGB(87, 187, 215)
+Globals.TextSize = 14.000
+Globals.TextStrokeColor3 = Color3.fromRGB(87, 187, 215)
+Globals.TextXAlignment = Enum.TextXAlignment.Left
+Globals.TextYAlignment = Enum.TextYAlignment.Top
+ 
+UIAspectRatioConstraint_2.Parent = Globals
+UIAspectRatioConstraint_2.AspectRatio = 0.018
+ 
+Keywords.Name = "Keywords"
+Keywords.Parent = Source
+Keywords.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keywords.BackgroundTransparency = 1.000
+Keywords.Size = UDim2.new(0, 4983, 0, 275132)
+Keywords.ZIndex = 5
+Keywords.Font = Enum.Font.Code
+Keywords.Text = ""
+Keywords.TextColor3 = Color3.fromRGB(248, 87, 68)
+Keywords.TextSize = 14.000
+Keywords.TextXAlignment = Enum.TextXAlignment.Left
+Keywords.TextYAlignment = Enum.TextYAlignment.Top
+ 
+UIAspectRatioConstraint_3.Parent = Keywords
+UIAspectRatioConstraint_3.AspectRatio = 0.018
+ 
+Numbers.Name = "Numbers"
+Numbers.Parent = Source
+Numbers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Numbers.BackgroundTransparency = 1.000
+Numbers.Size = UDim2.new(0, 4983, 0, 275132)
+Numbers.ZIndex = 4
+Numbers.Font = Enum.Font.Code
+Numbers.Text = ""
+Numbers.TextColor3 = Color3.fromRGB(255, 198, 0)
+Numbers.TextSize = 14.000
+Numbers.TextXAlignment = Enum.TextXAlignment.Left
+Numbers.TextYAlignment = Enum.TextYAlignment.Top
+ 
+UIAspectRatioConstraint_4.Parent = Numbers
+UIAspectRatioConstraint_4.AspectRatio = 0.018
+ 
+Remotes.Name = "Remotes"
+Remotes.Parent = Source
+Remotes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Remotes.BackgroundTransparency = 1.000
+Remotes.Size = UDim2.new(0, 4983, 0, 275132)
+Remotes.ZIndex = 5
+Remotes.Font = Enum.Font.Code
+Remotes.Text = ""
+Remotes.TextColor3 = Color3.fromRGB(255, 255, 255)
+Remotes.TextSize = 14.000
+Remotes.TextXAlignment = Enum.TextXAlignment.Left
+Remotes.TextYAlignment = Enum.TextYAlignment.Top
+ 
+UIAspectRatioConstraint_5.Parent = Remotes
+UIAspectRatioConstraint_5.AspectRatio = 0.018
+ 
+Strings.Name = "Strings"
+Strings.Parent = Source
+Strings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Strings.BackgroundTransparency = 1.000
+Strings.Size = UDim2.new(0, 4983, 0, 275132)
+Strings.ZIndex = 5
+Strings.Font = Enum.Font.Code
+Strings.Text = ""
+Strings.TextColor3 = Color3.fromRGB(173, 241, 149)
+Strings.TextSize = 14.000
+Strings.TextXAlignment = Enum.TextXAlignment.Left
+Strings.TextYAlignment = Enum.TextYAlignment.Top
+ 
+UIAspectRatioConstraint_6.Parent = Strings
+UIAspectRatioConstraint_6.AspectRatio = 0.018
+ 
+Tokens.Name = "Tokens"
+Tokens.Parent = Source
+Tokens.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tokens.BackgroundTransparency = 1.000
+Tokens.Size = UDim2.new(0, 4983, 0, 275132)
+Tokens.ZIndex = 5
+Tokens.Font = Enum.Font.Code
+Tokens.Text = ""
+Tokens.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tokens.TextSize = 14.000
+Tokens.TextXAlignment = Enum.TextXAlignment.Left
+Tokens.TextYAlignment = Enum.TextYAlignment.Top
+ 
+UIAspectRatioConstraint_7.Parent = Tokens
+UIAspectRatioConstraint_7.AspectRatio = 0.018
+ 
+Comments.Name = "Comments"
+Comments.Parent = Source
+Comments.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Comments.BackgroundTransparency = 1.000
+Comments.Size = UDim2.new(0, 4983, 0, 275132)
+Comments.ZIndex = 5
+Comments.Font = Enum.Font.Code
+Comments.Text = ""
+Comments.TextColor3 = Color3.fromRGB(213, 213, 213)
+Comments.TextSize = 14.000
+Comments.TextStrokeColor3 = Color3.fromRGB(213, 213, 213)
+Comments.TextStrokeTransparency = 0.000
+Comments.TextXAlignment = Enum.TextXAlignment.Left
+Comments.TextYAlignment = Enum.TextYAlignment.Top
+ 
+UIAspectRatioConstraint_8.Parent = Comments
+UIAspectRatioConstraint_8.AspectRatio = 0.018
+ 
+UIAspectRatioConstraint_9.Parent = Source
+UIAspectRatioConstraint_9.AspectRatio = 0.018
+ 
+UICorner.Parent = Editor
+ 
+SettingsTextButton.Name = "SettingsTextButton"
+SettingsTextButton.Parent = Frame
+SettingsTextButton.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+SettingsTextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+SettingsTextButton.Position = UDim2.new(0.465909094, 0, 0.860335171, 0)
+SettingsTextButton.Size = UDim2.new(0, 139, 0, 39)
+SettingsTextButton.Font = Enum.Font.SourceSans
+SettingsTextButton.Text = "Settings"
+SettingsTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingsTextButton.TextSize = 36.000
+SettingsTextButton.TextWrapped = true
+ 
+Logo.Name = "Logo"
+Logo.Parent = Bar
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.00499999989, 0, 0.0219999999, 0)
+Logo.Size = UDim2.new(0, 37, 0, 37)
+Logo.ZIndex = 3
+Logo.Image = "http://www.roblox.com/asset/?id=7151043774"
+ 
+VersionText.Name = "VersionText"
+VersionText.Parent = Bar
+VersionText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VersionText.BackgroundTransparency = 1.000
+VersionText.Position = UDim2.new(0.46708861, 0, 0.179487184, 0)
+VersionText.Size = UDim2.new(0, 51, 0, 23)
+VersionText.ZIndex = 3
+VersionText.Font = Enum.Font.SourceSans
+VersionText.Text = "v1.0.0"
+VersionText.TextColor3 = Color3.fromRGB(255, 255, 255)
+VersionText.TextSize = 20.000
+VersionText.TextWrapped = true
+ 
+TextButton.Parent = Bar
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.896202564, 0, 0.0769230798, 0)
+TextButton.Size = UDim2.new(0, 35, 0, 33)
+TextButton.ZIndex = 3
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 100.000
+TextButton.TextWrapped = true
+ 
+TextButton_2.Parent = Bar
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0.948101282, 0, 0.0769230798, 0)
+TextButton_2.Size = UDim2.new(0, 35, 0, 33)
+TextButton_2.ZIndex = 3
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+ 
+SettingFrame.Name = "SettingFrame"
+SettingFrame.Parent = OmenGui
+SettingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingFrame.BackgroundTransparency = 1.000
+SettingFrame.Position = UDim2.new(0.073939383, 0, 0.123726316, 0)
+SettingFrame.Size = UDim2.new(0, 317, 0, 266)
+SettingFrame.Visible = false
+SettingFrame.ZIndex = 5
+SettingFrame.Image = "rbxassetid://3570695787"
+SettingFrame.ImageColor3 = Color3.fromRGB(42, 42, 42)
+SettingFrame.ScaleType = Enum.ScaleType.Slice
+SettingFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+SettingFrame.SliceScale = 0.120
+ 
+TextLabel.Parent = SettingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.182965294, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.ZIndex = 6
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Settings"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+ 
+TextLabel_2.Parent = SettingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0347003154, 0, 0.402255654, 0)
+TextLabel_2.Size = UDim2.new(0, 152, 0, 38)
+TextLabel_2.ZIndex = 6
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Open/Close Key"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+ 
+TextBox.Parent = SettingFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Position = UDim2.new(0.539432168, 0, 0.402255654, 0)
+TextBox.Size = UDim2.new(0, 133, 0, 38)
+TextBox.ZIndex = 6
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "k"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+ 
+TextButton_3.Parent = SettingFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.Position = UDim2.new(0.182965294, 0, 0.714285731, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.ZIndex = 6
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "DESTROY"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+ 
+-- Scripts:
+ 
+local function YXFBP_fake_script() -- OwlHubTextButton.LocalScript 
+	local script = Instance.new('LocalScript', OwlHubTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Info", Text = "Script Started"})
+ 
+ 
+	end)
+end
+coroutine.wrap(YXFBP_fake_script)()
+local function QQLV_fake_script() -- FCTextButton.LocalScript 
+	local script = Instance.new('LocalScript', FCTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Info", Text = "Script Started"})
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Script Info", Text = "Do Shift + P to start"})
+		function sandbox(var,func)
+			local env = getfenv(func)
+			local newenv = setmetatable({},{
+				__index = function(self,k)
+					if k=="script" then
+						return var
+					else
+						return env[k]
+					end
+				end,
+			})
+			setfenv(func,newenv)
+			return func
+		end
+		cors = {}
+		mas = Instance.new("Model",game:GetService("Lighting"))
+		LocalScript0 = Instance.new("LocalScript")
+		LocalScript0.Name = "FreeCamera"
+		LocalScript0.Parent = mas
+		table.insert(cors,sandbox(LocalScript0,function()
+			-----------------------------------------------------------------------
+			-- Freecam
+			-- Cinematic free camera for spectating and video production.
+			------------------------------------------------------------------------
+ 
+			local pi    = math.pi
+			local abs   = math.abs
+			local clamp = math.clamp
+			local exp   = math.exp
+			local rad   = math.rad
+			local sign  = math.sign
+			local sqrt  = math.sqrt
+			local tan   = math.tan
+ 
+			local ContextActionService = game:GetService("ContextActionService")
+			local Players = game:GetService("Players")
+			local RunService = game:GetService("RunService")
+			local StarterGui = game:GetService("StarterGui")
+			local UserInputService = game:GetService("UserInputService")
+ 
+			local LocalPlayer = Players.LocalPlayer
+			if not LocalPlayer then
+				Players:GetPropertyChangedSignal("LocalPlayer"):Wait()
+				LocalPlayer = Players.LocalPlayer
+			end
+ 
+			local Camera = workspace.CurrentCamera
+			workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
+				local newCamera = workspace.CurrentCamera
+				if newCamera then
+					Camera = newCamera
+				end
+			end)
+ 
+			------------------------------------------------------------------------
+ 
+			local TOGGLE_INPUT_PRIORITY = Enum.ContextActionPriority.Low.Value
+			local INPUT_PRIORITY = Enum.ContextActionPriority.High.Value
+			local FREECAM_MACRO_KB = {Enum.KeyCode.LeftShift, Enum.KeyCode.P}
+ 
+			local NAV_GAIN = Vector3.new(1, 1, 1)*64
+			local PAN_GAIN = Vector2.new(0.75, 1)*8
+			local FOV_GAIN = 300
+ 
+			local PITCH_LIMIT = rad(90)
+ 
+			local VEL_STIFFNESS = 1.5
+			local PAN_STIFFNESS = 1.0
+			local FOV_STIFFNESS = 4.0
+ 
+			------------------------------------------------------------------------
+ 
+			local Spring = {} do
+				Spring.__index = Spring
+ 
+				function Spring.new(freq, pos)
+					local self = setmetatable({}, Spring)
+					self.f = freq
+					self.p = pos
+					self.v = pos*0
+					return self
+				end
+ 
+				function Spring:Update(dt, goal)
+					local f = self.f*2*pi
+					local p0 = self.p
+					local v0 = self.v
+ 
+					local offset = goal - p0
+					local decay = exp(-f*dt)
+ 
+					local p1 = goal + (v0*dt - offset*(f*dt + 1))*decay
+					local v1 = (f*dt*(offset*f - v0) + v0)*decay
+ 
+					self.p = p1
+					self.v = v1
+ 
+					return p1
+				end
+ 
+				function Spring:Reset(pos)
+					self.p = pos
+					self.v = pos*0
+				end
+			end
+ 
+			------------------------------------------------------------------------
+ 
+			local cameraPos = Vector3.new()
+			local cameraRot = Vector2.new()
+			local cameraFov = 0
+ 
+			local velSpring = Spring.new(VEL_STIFFNESS, Vector3.new())
+			local panSpring = Spring.new(PAN_STIFFNESS, Vector2.new())
+			local fovSpring = Spring.new(FOV_STIFFNESS, 0)
+ 
+			------------------------------------------------------------------------
+ 
+			local Input = {} do
+				local thumbstickCurve do
+					local K_CURVATURE = 2.0
+					local K_DEADZONE = 0.15
+ 
+					local function fCurve(x)
+						return (exp(K_CURVATURE*x) - 1)/(exp(K_CURVATURE) - 1)
+					end
+ 
+					local function fDeadzone(x)
+						return fCurve((x - K_DEADZONE)/(1 - K_DEADZONE))
+					end
+ 
+					function thumbstickCurve(x)
+						return sign(x)*clamp(fDeadzone(abs(x)), 0, 1)
+					end
+				end
+ 
+				local gamepad = {
+					ButtonX = 0,
+					ButtonY = 0,
+					DPadDown = 0,
+					DPadUp = 0,
+					ButtonL2 = 0,
+					ButtonR2 = 0,
+					Thumbstick1 = Vector2.new(),
+					Thumbstick2 = Vector2.new(),
+				}
+ 
+				local keyboard = {
+					W = 0,
+					A = 0,
+					S = 0,
+					D = 0,
+					E = 0,
+					Q = 0,
+					U = 0,
+					H = 0,
+					J = 0,
+					K = 0,
+					I = 0,
+					Y = 0,
+					Up = 0,
+					Down = 0,
+					LeftShift = 0,
+					RightShift = 0,
+				}
+ 
+				local mouse = {
+					Delta = Vector2.new(),
+					MouseWheel = 0,
+				}
+ 
+				local NAV_GAMEPAD_SPEED  = Vector3.new(1, 1, 1)
+				local NAV_KEYBOARD_SPEED = Vector3.new(1, 1, 1)
+				local PAN_MOUSE_SPEED    = Vector2.new(1, 1)*(pi/64)
+				local PAN_GAMEPAD_SPEED  = Vector2.new(1, 1)*(pi/8)
+				local FOV_WHEEL_SPEED    = 1.0
+				local FOV_GAMEPAD_SPEED  = 0.25
+				local NAV_ADJ_SPEED      = 0.75
+				local NAV_SHIFT_MUL      = 0.25
+ 
+				local navSpeed = 1
+ 
+				function Input.Vel(dt)
+					navSpeed = clamp(navSpeed + dt*(keyboard.Up - keyboard.Down)*NAV_ADJ_SPEED, 0.01, 4)
+ 
+					local kGamepad = Vector3.new(
+						thumbstickCurve(gamepad.Thumbstick1.x),
+						thumbstickCurve(gamepad.ButtonR2) - thumbstickCurve(gamepad.ButtonL2),
+						thumbstickCurve(-gamepad.Thumbstick1.y)
+					)*NAV_GAMEPAD_SPEED
+ 
+					local kKeyboard = Vector3.new(
+						keyboard.D - keyboard.A + keyboard.K - keyboard.H,
+						keyboard.E - keyboard.Q + keyboard.I - keyboard.Y,
+						keyboard.S - keyboard.W + keyboard.J - keyboard.U
+					)*NAV_KEYBOARD_SPEED
+ 
+					local shift = UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) or UserInputService:IsKeyDown(Enum.KeyCode.RightShift)
+ 
+					return (kGamepad + kKeyboard)*(navSpeed*(shift and NAV_SHIFT_MUL or 1))
+				end
+ 
+				function Input.Pan(dt)
+					local kGamepad = Vector2.new(
+						thumbstickCurve(gamepad.Thumbstick2.y),
+						thumbstickCurve(-gamepad.Thumbstick2.x)
+					)*PAN_GAMEPAD_SPEED
+					local kMouse = mouse.Delta*PAN_MOUSE_SPEED
+					mouse.Delta = Vector2.new()
+					return kGamepad + kMouse
+				end
+ 
+				function Input.Fov(dt)
+					local kGamepad = (gamepad.ButtonX - gamepad.ButtonY)*FOV_GAMEPAD_SPEED
+					local kMouse = mouse.MouseWheel*FOV_WHEEL_SPEED
+					mouse.MouseWheel = 0
+					return kGamepad + kMouse
+				end
+ 
+				do
+					local function Keypress(action, state, input)
+						keyboard[input.KeyCode.Name] = state == Enum.UserInputState.Begin and 1 or 0
+						return Enum.ContextActionResult.Sink
+					end
+ 
+					local function GpButton(action, state, input)
+						gamepad[input.KeyCode.Name] = state == Enum.UserInputState.Begin and 1 or 0
+						return Enum.ContextActionResult.Sink
+					end
+ 
+					local function MousePan(action, state, input)
+						local delta = input.Delta
+						mouse.Delta = Vector2.new(-delta.y, -delta.x)
+						return Enum.ContextActionResult.Sink
+					end
+ 
+					local function Thumb(action, state, input)
+						gamepad[input.KeyCode.Name] = input.Position
+						return Enum.ContextActionResult.Sink
+					end
+ 
+					local function Trigger(action, state, input)
+						gamepad[input.KeyCode.Name] = input.Position.z
+						return Enum.ContextActionResult.Sink
+					end
+ 
+					local function MouseWheel(action, state, input)
+						mouse[input.UserInputType.Name] = -input.Position.z
+						return Enum.ContextActionResult.Sink
+					end
+ 
+					local function Zero(t)
+						for k, v in pairs(t) do
+							t[k] = v*0
+						end
+					end
+ 
+					function Input.StartCapture()
+						ContextActionService:BindActionAtPriority("FreecamKeyboard", Keypress, false, INPUT_PRIORITY,
+							Enum.KeyCode.W, Enum.KeyCode.U,
+							Enum.KeyCode.A, Enum.KeyCode.H,
+							Enum.KeyCode.S, Enum.KeyCode.J,
+							Enum.KeyCode.D, Enum.KeyCode.K,
+							Enum.KeyCode.E, Enum.KeyCode.I,
+							Enum.KeyCode.Q, Enum.KeyCode.Y,
+							Enum.KeyCode.Up, Enum.KeyCode.Down
+						)
+						ContextActionService:BindActionAtPriority("FreecamMousePan",          MousePan,   false, INPUT_PRIORITY, Enum.UserInputType.MouseMovement)
+						ContextActionService:BindActionAtPriority("FreecamMouseWheel",        MouseWheel, false, INPUT_PRIORITY, Enum.UserInputType.MouseWheel)
+						ContextActionService:BindActionAtPriority("FreecamGamepadButton",     GpButton,   false, INPUT_PRIORITY, Enum.KeyCode.ButtonX, Enum.KeyCode.ButtonY)
+						ContextActionService:BindActionAtPriority("FreecamGamepadTrigger",    Trigger,    false, INPUT_PRIORITY, Enum.KeyCode.ButtonR2, Enum.KeyCode.ButtonL2)
+						ContextActionService:BindActionAtPriority("FreecamGamepadThumbstick", Thumb,      false, INPUT_PRIORITY, Enum.KeyCode.Thumbstick1, Enum.KeyCode.Thumbstick2)
+					end
+ 
+					function Input.StopCapture()
+						navSpeed = 1
+						Zero(gamepad)
+						Zero(keyboard)
+						Zero(mouse)
+						ContextActionService:UnbindAction("FreecamKeyboard")
+						ContextActionService:UnbindAction("FreecamMousePan")
+						ContextActionService:UnbindAction("FreecamMouseWheel")
+						ContextActionService:UnbindAction("FreecamGamepadButton")
+						ContextActionService:UnbindAction("FreecamGamepadTrigger")
+						ContextActionService:UnbindAction("FreecamGamepadThumbstick")
+					end
+				end
+			end
+ 
+			local function GetFocusDistance(cameraFrame)
+				local znear = 0.1
+				local viewport = Camera.ViewportSize
+				local projy = 2*tan(cameraFov/2)
+				local projx = viewport.x/viewport.y*projy
+				local fx = cameraFrame.rightVector
+				local fy = cameraFrame.upVector
+				local fz = cameraFrame.lookVector
+ 
+				local minVect = Vector3.new()
+				local minDist = 512
+ 
+				for x = 0, 1, 0.5 do
+					for y = 0, 1, 0.5 do
+						local cx = (x - 0.5)*projx
+						local cy = (y - 0.5)*projy
+						local offset = fx*cx - fy*cy + fz
+						local origin = cameraFrame.p + offset*znear
+						local part, hit = workspace:FindPartOnRay(Ray.new(origin, offset.unit*minDist))
+						local dist = (hit - origin).magnitude
+						if minDist > dist then
+							minDist = dist
+							minVect = offset.unit
+						end
+					end
+				end
+ 
+				return fz:Dot(minVect)*minDist
+			end
+ 
+			------------------------------------------------------------------------
+ 
+			local function StepFreecam(dt)
+				local vel = velSpring:Update(dt, Input.Vel(dt))
+				local pan = panSpring:Update(dt, Input.Pan(dt))
+				local fov = fovSpring:Update(dt, Input.Fov(dt))
+ 
+				local zoomFactor = sqrt(tan(rad(70/2))/tan(rad(cameraFov/2)))
+ 
+				cameraFov = clamp(cameraFov + fov*FOV_GAIN*(dt/zoomFactor), 1, 120)
+				cameraRot = cameraRot + pan*PAN_GAIN*(dt/zoomFactor)
+				cameraRot = Vector2.new(clamp(cameraRot.x, -PITCH_LIMIT, PITCH_LIMIT), cameraRot.y%(2*pi))
+ 
+				local cameraCFrame = CFrame.new(cameraPos)*CFrame.fromOrientation(cameraRot.x, cameraRot.y, 0)*CFrame.new(vel*NAV_GAIN*dt)
+				cameraPos = cameraCFrame.p
+ 
+				Camera.CFrame = cameraCFrame
+				Camera.Focus = cameraCFrame*CFrame.new(0, 0, -GetFocusDistance(cameraCFrame))
+				Camera.FieldOfView = cameraFov
+			end
+ 
+			------------------------------------------------------------------------
+ 
+			local PlayerState = {} do
+				local mouseIconEnabled
+				local cameraSubject
+				local cameraType
+				local cameraFocus
+				local cameraCFrame
+				local cameraFieldOfView
+				local screenGuis = {}
+				local coreGuis = {
+					Backpack = true,
+					Chat = true,
+					Health = true,
+					PlayerList = true,
+				}
+				local setCores = {
+					BadgesNotificationsActive = true,
+					PointsNotificationsActive = true,
+				}
+ 
+				-- Save state and set up for freecam
+				function PlayerState.Push()
+					for name in pairs(coreGuis) do
+						coreGuis[name] = StarterGui:GetCoreGuiEnabled(Enum.CoreGuiType[name])
+						StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType[name], false)
+					end
+					for name in pairs(setCores) do
+						setCores[name] = StarterGui:GetCore(name)
+						StarterGui:SetCore(name, false)
+					end
+					local playergui = LocalPlayer:FindFirstChildOfClass("PlayerGui")
+					if playergui then
+						for _, gui in pairs(playergui:GetChildren()) do
+							if gui:IsA("ScreenGui") and gui.Enabled then
+								screenGuis[#screenGuis + 1] = gui
+								gui.Enabled = false
+							end
+						end
+					end
+ 
+					cameraFieldOfView = Camera.FieldOfView
+					Camera.FieldOfView = 70
+ 
+					cameraType = Camera.CameraType
+					Camera.CameraType = Enum.CameraType.Custom
+ 
+					cameraSubject = Camera.CameraSubject
+					Camera.CameraSubject = nil
+ 
+					cameraCFrame = Camera.CFrame
+					cameraFocus = Camera.Focus
+ 
+					mouseIconEnabled = UserInputService.MouseIconEnabled
+					UserInputService.MouseIconEnabled = false
+ 
+					mouseBehavior = UserInputService.MouseBehavior
+					UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+				end
+ 
+				-- Restore state
+				function PlayerState.Pop()
+					for name, isEnabled in pairs(coreGuis) do
+						StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType[name], isEnabled)
+					end
+					for name, isEnabled in pairs(setCores) do
+						StarterGui:SetCore(name, isEnabled)
+					end
+					for _, gui in pairs(screenGuis) do
+						if gui.Parent then
+							gui.Enabled = true
+						end
+					end
+ 
+					Camera.FieldOfView = cameraFieldOfView
+					cameraFieldOfView = nil
+ 
+					Camera.CameraType = cameraType
+					cameraType = nil
+ 
+					Camera.CameraSubject = cameraSubject
+					cameraSubject = nil
+ 
+					Camera.CFrame = cameraCFrame
+					cameraCFrame = nil
+ 
+					Camera.Focus = cameraFocus
+					cameraFocus = nil
+ 
+					UserInputService.MouseIconEnabled = mouseIconEnabled
+					mouseIconEnabled = nil
+ 
+					UserInputService.MouseBehavior = mouseBehavior
+					mouseBehavior = nil
+				end
+			end
+ 
+			local function StartFreecam()
+				local cameraCFrame = Camera.CFrame
+				cameraRot = Vector2.new(cameraCFrame:toEulerAnglesYXZ())
+				cameraPos = cameraCFrame.p
+				cameraFov = Camera.FieldOfView
+ 
+				velSpring:Reset(Vector3.new())
+				panSpring:Reset(Vector2.new())
+				fovSpring:Reset(0)
+ 
+				PlayerState.Push()
+				RunService:BindToRenderStep("Freecam", Enum.RenderPriority.Camera.Value, StepFreecam)
+				Input.StartCapture()
+			end
+ 
+			local function StopFreecam()
+				Input.StopCapture()
+				RunService:UnbindFromRenderStep("Freecam")
+				PlayerState.Pop()
+			end
+ 
+			------------------------------------------------------------------------
+ 
+			do
+				local enabled = false
+ 
+				local function ToggleFreecam()
+					if enabled then
+						StopFreecam()
+					else
+						StartFreecam()
+					end
+					enabled = not enabled
+				end
+ 
+				local function CheckMacro(macro)
+					for i = 1, #macro - 1 do
+						if not UserInputService:IsKeyDown(macro[i]) then
+							return
+						end
+					end
+					ToggleFreecam()
+				end
+ 
+				local function HandleActivationInput(action, state, input)
+					if state == Enum.UserInputState.Begin then
+						if input.KeyCode == FREECAM_MACRO_KB[#FREECAM_MACRO_KB] then
+							CheckMacro(FREECAM_MACRO_KB)
+						end
+					end
+					return Enum.ContextActionResult.Pass
+				end
+ 
+				ContextActionService:BindActionAtPriority("FreecamToggle", HandleActivationInput, false, TOGGLE_INPUT_PRIORITY, FREECAM_MACRO_KB[#FREECAM_MACRO_KB])
+			end
+		end))
+		for i,v in pairs(mas:GetChildren()) do
+			v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+			pcall(function() v:MakeJoints() end)
+		end
+		mas:Destroy()
+		for i,v in pairs(cors) do
+			spawn(function()
+				pcall(v)
+			end)
+		end
+ 
+ 
+ 
+	end)
+end
+coroutine.wrap(QQLV_fake_script)()
+local function LJSQPG_fake_script() -- KATTextButton.LocalScript 
+	local script = Instance.new('LocalScript', KATTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Info", Text = "Script Started"})
+		----------- golden cheats and cheat studios are the #1 yt channels for kat script
+		------------this script works on fluxus and krnl or paid exploits
+		-------------the lime x version is currently the best one soo choose that version
+		loadstring(game:HttpGet("https://pastebin.com/raw/LwCa7jPq", true))()
+	end)
+end
+coroutine.wrap(LJSQPG_fake_script)()
+local function QVAVIMK_fake_script() -- MCTextButton.LocalScript 
+	local script = Instance.new('LocalScript', MCTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/kilav3rm/Scripts/main/MeepCity'),true))()
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Info", Text = "Script Started"})
+ 
+ 
+ 
+	end)
+end
+coroutine.wrap(QVAVIMK_fake_script)()
+local function DAYG_fake_script() -- IYTextButton.LocalScript 
+	local script = Instance.new('LocalScript', IYTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Info", Text = "Script Started"})
+ 
+ 
+	end)
+end
+coroutine.wrap(DAYG_fake_script)()
+local function IOFRC_fake_script() -- FGTextButton.LocalScript 
+	local script = Instance.new('LocalScript', FGTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		local ownerId = game.CreatorId
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Info", Text = "Script Started"})
+		game.Players.LocalPlayer.UserId = ownerId
+	end)
+end
+coroutine.wrap(IOFRC_fake_script)()
+local function XHGRLR_fake_script() -- BtoolsTextButton.LocalScript 
+	local script = Instance.new('LocalScript', BtoolsTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+		local tool2 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+		local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+		local tool4 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+		local tool5 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+		tool1.BinType = "Clone"
+		tool2.BinType = "GameTool"
+		tool3.BinType = "Hammer"
+		tool4.BinType = "Script"
+		tool5.BinType = "Grab"
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Info", Text = "Script Started"})
+ 
+ 
+	end)
+end
+coroutine.wrap(XHGRLR_fake_script)()
+local function QROXU_fake_script() -- DHTextButton.LocalScript 
+	local script = Instance.new('LocalScript', DHTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Info", Text = "Script Started"})
+ 
+	end)
+end
+coroutine.wrap(QROXU_fake_script)()
+local function QHGRR_fake_script() -- VHHUBTextButton.LocalScript 
+	local script = Instance.new('LocalScript', VHHUBTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Info", Text = "Script Started"})
+	end)
+end
+coroutine.wrap(QHGRR_fake_script)()
+local function IJMV_fake_script() -- ExecuteTextButton.Script 
+	local script = Instance.new('Script', ExecuteTextButton)
+ 
+	return(function(e,...)local I="This file was obfuscated using PSU Obfuscator 4.0.A | https://www.psu.dev/ & discord.gg/psu";local u=e["wVWN67"];local m=e[((273137299-#("psu 34567890fps, luraph 1fps, xen 0fps")))];local c=e[((#{553;382;171;62;}+194809597))];local z=e.CHsNEV;local v=e[(756096794)];local s=e.LUYNMnUfuk;local o=e[((440138354-#("guys someone play Among Us with memcorrupt he is so lonely :(")))];local d=e[((#{347;701;771;}+549660713))];local H=e[((174308035-#("luraph is now down until further notice for an emergency major security update")))];local x=e[(85855857)];local W=e[(422313799)];local J=e[((#{}+376943445))];local k=e[((#{756;974;270;266;(function(...)return...;end)(214,269,647)}+355485876))];local Z=e.Q0uHEcM;local B=e[((#{22;372;369;(function(...)return 97,586,...;end)(792,203,246)}+515650543))];local Q=e[((#{403;611;886;478;(function(...)return 246,317,406,812;end)()}+220481807))];local a=e[((#{445;631;48;(function(...)return 248,307,969,758;end)()}+762566008))];local j=e[((#{419;837;474;797;(function(...)return 167,242;end)()}+639755088))];local A=e['ZEbFBY0'];local n=e[(219317295)];local _=e[(275041407)];local L=e[((566771858-#("@everyone designs are done. luraph website coming.... eta JULY 2020")))];local t=e['yWcuE'];local V=e.xlWZCzOwG;local C=e[(151032168)];local U=e[(736001045)];local N=e[(477318273)];local f=e[((#{426;632;143;}+144435920))];local p=e[(660701097)];local D=e[((573527856-#("this isn't krnl support you bonehead moron")))];local y=e[(960462248)];local r=e[(936296917)];local Y=((getfenv)or(function(...)return(_ENV);end));local h,i,l=({}),(""),(Y(a));local t=((l["\98\105\116"..e[t]..e[o]])or(l[""..e[d]..e[m]..e[c]])or({}));local o=(((t)and(t[""..e[d].."\120"..e[D]..e[s]]))or(function(e,l)local o,a=a,f;while((e>f)and(l>f))do local t,c=e%n,l%n;if t~=c then a=a+o;end;e,l,o=(e-t)/n,(l-c)/n,o*n;end;if e<l then e=l;end;while e>f do local l=e%n;if l>f then a=a+o;end;e,o=(e-l)/n,o*n;end;return(a);end));local h=(n^k);local g=(h-a);local F,E,b;local S=(i[""..e[y]..e['pQYIzL']..e[r].."\114"]);local h=(i["\103\115"..e[A].."\98"]);local h=(i[""..e[p]..e[A].."\98"]);local w=(i["\98"..e[U].."\116\101"]);local i=((l[""..e[A].."\110"..e['BkoeS0k']..e[r].."\99"..e[v]])or(l[""..e[c].."\97"..e[d].."\108\101"]["\117\110\112\97\99\107"]));local O=(l["\112"..e[r]..e[m]..e[s]..e[p]]);local P=(l[""..e[p]..e[u]..e[c].."\109"..e[u].."\116"..e[r]..e[c].."\97"..e[d]..e[x].."\101"]);local M=(l[""..e[p].."\101"..e[x].."\101"..e[y].."\116"]);local v=(l["\116\111"..e[C]..e[A]..e['xMnswH'].."\98"..e[u]..e[s]]);local z=((l[""..e['xMnswH'].."\97"..e[c].."\104"][""..e[x]..e[z]..e[u].."\120\112"])or(function(e,l,...)return((e*n)^l);end));local A=(l[""..e[s]..e[r]..e[_].."\115"..e[u].."\116"]);local A=(l["\116"..e[U]..e["BkoeS0k"].."\101"]);local U=(l[""..e.xMnswH.."\97\116\104"][""..e[B].."\108"..e[D].."\111"..e[s]]);b=(t["\98"..e[r]..e[C].."\100"])or(function(l,e,...)return(((l+e)-o(l,e))/n);end);F=((t[""..e[x]..e[p].."\104\105"..e[B]..e[c]])or(function(l,e,...)if(e<f)then return(E(l,-(e)));end;return((l*n^e)%n^k);end));local A=(t[""..e[d].."\111\114"])or(function(e,l,...)return(g-b(g-e,g-l));end);local g=(t["\98\110\111"..e[c]])or(function(e,...)return(g-e);end);E=((t[""..e[s].."\115"..e['pQYIzL'].."\105"..e[B].."\116"])or(function(l,e,...)if(e<f)then return(F(l,-(e)));end;return(U(l%n^k/n^e));end));if((not(l["\98"..e[m]..e[c].."\51\50"]))and(not(l["\98\105\116"])))then t[""..e[s]..e[p]..e['pQYIzL'].."\105\102"..e[c]]=E;t["\108\115"..e["pQYIzL"].."\105\102\116"]=F;t[""..e[d]..e[r].."\110\100"]=b;t[""..e[d].."\110"..e[D]..e[c]]=g;t["\98"..e[D]..e[s]]=A;t["\98\120\111\114"]=o;end;local A=(((l[""..e[c]..e[r]..e[d]..e[x]..e[u]][""..e[y]..e[s].."\101"..e[r].."\116\101"]))or((function(e,...)return({i({},f,e);});end)));local s=(l["\116"..e[r]..e[d]..e[x].."\101"][""..e[y].."\111"..e[C]..e[y]..e[r].."\116"]);local n=(l[""..e[c].."\97"..e[d].."\108"..e[u]][""..e[m].."\110"..e[p].."\101\114\116"]);local n=(l["\116"..e[r]..e[d]..e[x]..e[u]]["\114\101"..e.xMnswH.."\111\118"..e[u]]);l["\98"..e[m]..e[c].."\51\50"]=t;local l=(Z);local n=(#I+W);local c,x=({}),({});for e=f,n-a do local l=S(e);c[e]=l;x[e]=l;x[l]=e;end;local f,a=(function(o)local t,e,r=w(o,a,N);if((t+e+r)~=j)then l=l+H;n=n+Q;end;o=h(o,V);local l,t,r=(""),(""),({});local e=a;local function i()local l=v(h(o,e,e),L);e=e+a;local o=v(h(o,e,e+l-a),L);e=e+l;return(o);end;l=x[i()];r[a]=l;while(e<#o)do local e=i();if c[e]then t=c[e];else t=l..h(l,a,a);end;c[n]=l..h(t,a,a);r[#r+a],l,n=t,t,n+a;end;return(s(r));end)("PSU|22S13102762771212277101414276111110151527727H111P1P27l10111L1l27L27H1h1H27b27G27b276131327J2761b1t1M27622w1S27c22227u22G27622H2211810181B192232251c1221u210111A27621z1Y1H21321i1n141v1a162321F27e1022v161c182321328K1028y1H21h21e1A1N1D22w101B27622021O27C1Z2922942962301927F27h2852761i1i10131127a101X1X102A827R111I1g121Q1U29A28014162aD2Af2ah2A92832Al2aN1Q27V29s192Ad28027X27B27928029S1E27K102341j121d1022Y162a427I2bd2AW2aa275276122ab1S28c2BM192a32Bm1v1v2b22b7281276182c729i1b28v28x28Z2912932951623j1R1a1x21628A28c141322127U22j1s1d22022M1R1D1122222E111322d22K2cy111n1022k21V29h22222M1G1H1r1p1422322m2281c21i29s29u29W1429Y2cF29629829A22621b29e2dx27629c2E129927621221z22B1F21i29H2Cc29l29N29p2371g2bM2a627r13121C1c27l2EN27927724k24M121A151f2a427D2a72AM13162BD1X1z122AZ2A71m141q1p2br2D31227E29A2F82fa2AM17171I2FD1Q1O2AU2102BO27d1I1K161q1S2bl27R16171f1e27h27R15141r1V142FP2Fi1b2E62aJ102C4101221J21H25R25R2861c172E3121H161n1B1o23H2Bc27621T21e101M1H23J2cB1022a2131R21P29z2CG232122bz22f21i1d1721K1z27u112332DQ1022c21d1T1c2ce2A0297142F029b2gy161J1m1Q181H27T1l131E192322hx22a21j18121R1H1w21F1J1B1q23j2gV2e328M2B42ca2321o1j2Gx1H2172171s1q2931521n2Hp112Iw1t1t1D2362HM27622s1129D121t1p152iK2JN1022821O1D1O1S1N29m1s22Q162bi102271x2hI2931j1n21j2Iu2iW2Iy2Gw1022x1718172Eq1222s1D2g42Kn2881n2cH2ED102242111e1f1S1t17192302k82762311C1A1E21M214151r1T2iH2ij2322Iz102361N1K141S1r1n2322LB1022r2791b1D21M2191n1l2CU122972H52HY1z2A91b22T2Hd21Y21B2lw21I29Z2kF23d2Gk21V217191l23J2JX22p1k111R2Lv2gw1R23j2kU28x21229E2182192331r2ej1022D2121M1n21n2131u15112i32hk2n51023717161R2L82302Gk2Ld2m822r2b427622n1O224151e27622621n1O1f171N1x21I2lt1g2m32MB2bd22821d1F1q1723c2Mc2222111d2172nA2Lp2Hz2d91J2KP22T2MC22U171d1V1m2322Nq22R1c111d122mu1Q27y2i81h1s2pf27R1B1U2jS1V1l2Ky2Jl1G1r27621W1X13171K1p1O21j2ms1l2132161a171H1821a2q821D2KI2OQ2Os2bd2382lM2IK2nq2202151f1a182Ik2L02Hz2BY1L1V1T2Ch2JX22b21c1H2d91b21521e2k62l021U2ME1M21H21D1j2cH2qQ219142k11S2m12Bz21T1Y1N1T1V2M71h2Hv2mc2251y1q161M23728927721S2672672232hD22r2oK2ip1f2jQ1o2362mC22R1h28n142N42g421V1Y29e1N1J22y182bR22a21F2Sj2hx22421L1K21e21i27y2L7191k23c2pJ2762In2m8151a2Ph2RY21j2hG1T2RJ122e22Hy21N2aa22v2Lp22B2132if101L2Hv2Gk2381t2QU22o2Lp2jZ2rO1N1123c2Jx2mR191j2bG1N2r723D2o72762se191F2B41g152H01D1P1g1M23c2hd22v2GY1q1B142Kf1M1723J2LZ21V21I2GW2h11q21j2st182Sv22Y2HD22U1F2Lw2iC2Ij1f1d22V2Te1022B21E1o21G2142891I2At21J21J2Oi2V723j2gK22q2bi1322v2Hx2212NK2Nm21n219181F2h023J2HX2s62S42oE21m21O2bh29b2LZ21U217172Ey2Ii192it2Iv2Ix2SY2762kn2ix2rd21928721Q21Q28722s2gK23B1M181T2Sq2j72H0122302hx2342js2ir2H021721K1i2k62oz2i02Do2M62372U32g61G2IL29T2nR2ha2h014152cA2PH2362kq2UN2sF122Od1d151V1j29G29I2V127Y1h141c1u23c2uM1021U21C1r2Wk21P2Ng181o21121f2jk23i2U31D2Mt2Lo2kL22I21h2yL1b1c2uy2VU235141g2Zs21m21C1121D2171h2QZ2r12Ch2Z02mJ2WZ1Y2mK11172Q71115182332Gk2dz2e12Lz2262Zy131o2JT2122181j1p1E1N23d2MC22t2D92JJ23D2L02382n02nT2nV2L92MC22B21N2n22KK27622E21f2H02lK21t21K2gk2Vm2lw2ZH311b311d1N2LK21s21l2HD21z2RB21m2hJ2dW2gK22d1h2Rm22u2nQ2EI2Dh2DJ23J2j52762yh1R21D2181m2WQ1n21M21L1J2Cy2rU161122t3123312E1h171r22t2X62nr2H022x2Lz22p22a172jQ2Fp31321l2Jj172181a2ga313a2mC22e21J2Uv2Y72i62tf21J2Th2Tj1L2RY31061R310823j2l02S62t92l82TC2882uN2R714313N21m312D312F312h312J1d312L312n2MC2Jp2oe1i2302yi1022w2gw2rn31473149312U2bR2321B1I23G2vU313u2pN2bi2JH2PR2rv2pU2k82sK2bd311z2rM22N21L2lP21V21827H1b2Wm312v21y191p22L2Mc21y21g1j2E1311621n2MZ2Ch2Gk22B21I314123J1j1O27622B21M141o1P1D3136312M21O21f151d2G321r1Z28R2zf2n92332lz22821R2G62OQ1W311W2972Vu311J2Ky1f2tI2wk1127x311e1T23d2Jx22c2ME29S2132132QV22s2Hx29K310a310c2Nh2Mg2jX2rs102S4102l61B2362Z02iN2IP2IR1z21F312K2r2312n2L02yT2Uj1T28c23c2l028Y2Tj2IE16317M2mC2YT1j1422w2JX2202132C22Pu21c2Wy22t2hx2Oa2OC2Oe2it2Uq2tq2Lz2391r314Y2xU1n2XW2XY22q2L022021P1o1c2SH2k82332PC3140313n2322z0312a312C312E2v7312G21F1p1K22Y2JX22E1411316p2Yr2762392s41n1m1527T22Y2L02MJ2Jv2142W01r22r2Nc2uN2M22M42VC1o29P316A319Z1h311L102uF318r2Hv2hd231122m31f1v1U1I2LK2ql27622C2122P21522V2rd2F9182iR121822o2L02WF2L71l2VR2972nq2361J2Qt1B1222u313i2HY21D31002r22no2Dw2z0317y2Pe29S2H0317v1T2uD2Bz23b1I2QD1S29e1E2Hb2t3316e2bH21r2R62dI2Sp2L0319v2NH2k82zG31A9103193319531971d21i21P101r2102RI2CH2lP22x1q21821p2Qd1L2Bk2K92oU316M17316o2Dv2972z029K21C1x1m1g31872eY2OP2or319A2so1r27429i22u314L317V22T31582Q82gM2HV2HX2Sm1J31aV1R2nh2V5310t2jx23B310m2q5131H2MA2Pb2G422p182i61D2n331bb2131Q1y313F2uW2322mc2hz2yw2Yy2Jx21U2Xb1t21R2151t2gZ31AJ21Z21h2kF2R12jl2VU2S12S31m21321j27H313q22n23621b316v22o31282ya2j82JA2Jc2yD2jF2CZ2jI2Jk2362gK2e429f2mC2BF2Wu22v2MC2Q02at2vS2LP22P2oP1T2C7142p62Eq102Wf3163141E2Mm2Ke310t2lp2s631DD2s628126O25R21G2hD2241Z1821g319s2MC23731EE1m1p22T31bo23b2LJ31f52WS316u1P1i1d1E2ib310e29a2XI1j1s31dX2KL318A31aq2H3317o21J1B313A2OF2t8102Ta2tC2lp21X2171F2X12Hv2Nq2q0172PX1Q31C22X731d22Wt31AQ2cz233314g31732MF2Kd2I4232312v2341S1U23D312v22t1M1323F312v22121M21e222314G2371i2sV2Gv31bD31BF2Y827631H1316f21o2K02K2310T31cN31a31o2R731141Y31I831ia23331582181t1n1Y2RB22q313A2762132182nQ2321R318o310t2P51a2753170312v23729o318l2Y92z22932ck21131da23c2gK31I731Ka22u2Lp22321a1s31432J32Gk2On2O02Nq31592831t311g311S2CD319S2hx2tX2Nu2l821d31eS2y72NQ2on2Kf2kj314g21Z2N7182MM313V2Tb318229I2uo1L1731Ee1C31gI2762s11b1H1P1921i31Cf3126314g22B21O1Q2cJ21J319s2Jx22a21N2l41s21F21H2di23f2LP2LR2w62V831Hi315Z21K1a313N2p731hl1m21G2k01l1I192RV31222sR15315l315n2bd31172zF29B2GK22F21E19310d312V22v28m31JW2kL2T016131B27522V31LK31JL2K3310U2Bd2XS2nV2IX2hx22e21R1r312m1K1d21L2ng1N23l26R2EK2bo2et2BV2771I1J111q2zX27F2EN1m2WI2a71h131q21K1y2FC2Fe21t22J2A71N151q24723x2A72g01Q21021Q2A731ly2v32pk1I2ID1Q1I29I31AV191Q26725H2a71o1a1Q22M21w2A71P2iW22U23g2a71u1c1Q24a23K2a71v1d1Q22F2252A71S1E1Q24X24r2A71T2op23L24B2A7121g1Q25B24L2a731ee1Q21s22i2a72AH1Q23u2402a7111J1q24323T2A7161K1q22R23d2a7171l31Ig22Q2a7142iC21j2192a7151n1q24T2532a71a1O31pt31pv2Ah1b1p1Q1x2TT2Ah181Q1Q2UG2A7191R1Q25624g2A71e2JB21a21G2a71F1T1q23R24D2a72Yx1q25A24K2A72P81q25z25P2A721E1W1Q25824m2a721F1x1q23q24c2A721C2s224n2592A721D1Z1q23023a2a721I2101Q22h21V2A721J21131SF31on21g2121Q25924n2A721h31ep23d22r2a72Lh1Q1a2ND1i21N2151q26025e2a721K2161Q24023u2A721l2171Q22Z2352a721Q2181q24523Z2a721R2191q23v2412a721o21a1q23F22P2a721p21b1q26225C2a71y21c1q24y24o2A71z21D1Q12315y2ah1w21E1Q21y22K2A71x21F1q25724h2a721221G1Q25124v31OT121x1l31gz2AK31Oy1Q24L25B31P31Q22d22731P731p92Fu31pD2g121521f31pi171q22g21U2a731pN24B23l2a71R31ps22c22631Pw31py141U31q22IW1K2o82AH31q81q24Z24P31Qd31Qf24223s31qj31ql1W21m31Qp2Op23y24431Qu31qW22K21Y31r01H1Q2Yo31R531pM22022a31rA31RC21L1z31RG31ri1327P2Ah31RN1q24c23q31rr2iC24s25231rw31RY22O23e31S231s42182Dp31s731S924r24x2A731Se1q25324t31sI31sk21b21H31So2jb25y25O31sT31sV2Fg31Sz1u1Q24J25531t41V1Q24G25631T931Tb102b12aH31tg1q24i25431TL2S221E21431tQ31tS23S24231tw31tY2G331U231u422x2372a731U71Q1V2bd1i31uD1Q31bE31uH2141q22L21Z2A731Un1q2382iL2ah31ut1Q24423Y31Uy31v022v23H31V431V625t25n31va31VC23B23131vG31vi21N2Ag2Ah31vn1q23G22U31vS31Vu31s031vY31w022E2242A731w51Q2zN31wA31wC171T31Wg31WI2142H82em31WN31wP2791I31ws22w23631ww26625G31X01q25V25l31x31q24623W31X71q22522f31Xc31se24p24Z31xg31PS21121r31Xl1q22722d31XP1Q23m24831Q731q91e1k31xy1q1G28w2aH31qk1Q22222831y61q23323931yA2AO29A1i31r125524j31yi1q22322931Ym1Q21621C31YQ1Q314831RM31RO2392hw2ah31RS1Q24923n31Z31Q21G21A31Z71q1Z21l2a731S81q23722X31zF31sf24h25731zK1Q21331cU2ah31sP1q23422y31zs1q22N21X31ZV1Q21o21232001q23I31792aH31tA1Q24W24Q31tF31th21721D320e1Q23E22o320i1Q1J2bz1i31Tx1Q24Q24w320P1q25224s320t31U826125F31Uc31Ep23X24732122iD2a92Ah321821p21331us31uU23a2xQ2aH31UZ1Q23o24e321l1q24f23P321P2IX318L2ah31VH1q21H21B31VM31Vo22y23432221Q24m25832251Q26525j322931w622622c322d1Q22422e322h1Q21U28g322L31wO21G2ay31wS23H2wd2ah2FS22q23C322W2MZ323021q210323423n24932381q23123B323C1Q23522z323g162BW1i31q31q21C2CM31xt31q923w246323S24K25A31Y21Q21X22n324125w25q324523K24A31yE1q21F215324c22T2WN2Ah31rB1Q24d23R324k21R211324N1Q22S23I31YZ31w131w31i31RX1Q22i21S325024V251325431S921229w31sD31Sf22j21t325d24E23O31Zo1q26425i325M24o24Y325Q22122B325u25U25K320531Mf2GA1i320A21i218326722p23F326b25s25m320M1Q228222326K22a220326O1q22b221326S31eQ21k326W232238321731UO1f27u321c31uu26325D321H1Q21921J327C24823M327G1M31gJ1I327K2L7327O1Q23Z245327S25024U327W23t24332801q23p24F328424123V328822922331WM328d27D2ac29h29I328J2Fe25424I27F2yD2g832BC31pe32dH27623n23R141n26R26C27625X25X3238131W31yP2AE21528K2c71D2CZ2qV1F1c2Br1i31PX1q21z22L31xP1322931Yl329B31OZ31Yt1X2192eQ2ep23Q23q1i31QE1q32do27R2G81j31Ef27F1D1C142Lf32F31C1g1i2Eo2Pe1a28N2BZ329b1Q24U25027F31Hz2IR1A2eP1131Nm2ca323V32DQ141W26T32Dy1026D26D31P332e032e21x2112FK32fV1W1132dK32eB323021W22M27f2GC2OK2BS162lu1t32bC31p81322I22h2761X2fW2BN25b25b32gt27k27J161632GY2BN1B1b32GY31jb1522W22W312m171E28R2bm32db2yd2ZM2kl2b62Pk276"),(#I-J);local function n(e,l,...)if(e==900817642)then return(((o(o(l,72640),948321))-213461)-812728);elseif(e==117265410)then return(o(((l)-880717)-141665,423738));elseif(e==699765753)then return(o(o((l)-407787,235495),998408));elseif(e==435447442)then return((o(o(o(l,921543),119818),335269))-688186);elseif(e==727131874)then return(o(o(o(l,267838),114500),821468));elseif(e==822393652)then return(o((((l)-632082)-884821)-982110,591945));elseif(e==372818567)then return(o((((o(l,950259))-166337)-988069)-996068,100142));elseif(e==439189410)then return((o(o(((l)-481884)-271838,609179),438961))-234306);elseif(e==903977518)then return(o(o((o((l)-781352,7572))-943417,433389),258219));elseif(e==932865982)then return((o(o(((l)-50080)-271878,836544),444932))-950337);elseif(e==650823287)then return(o(((l)-168248)-468964,404853));elseif(e==947103811)then return(o(((l)-792457)-163566,305525));else end;end;local r=e[(219317295)];local d=e[((#{}+144435923))];local n=e['AIZOB'];local s=e[((830311978-#("please suck my cock :pleading:")))];local u=e[(452232204)];local y=e[((685420206-#("uh oh everyone watch out pain exist coming in with the backspace method one dot two dot man dot")))];local t=e[(762566015)];local p=e[((#{178;277;941;}+477318270))];local function c()local t,c,r,e=w(f,a,a+p);t=o(t,l);l=t%n;c=o(c,l);l=c%n;r=o(r,l);l=r%n;e=o(e,l);l=e%n;a=a+y;return((e*s)+(r*u)+(c*n)+t);end;local function s(o,e,l)if(l)then local e=(o/r^(e-t))%r^((l-t)-(e-t)+t);return(e-(e%t));else local e=r^(e-t);return(((o%(e+e)>=e)and(t))or(d));end;end;local function d()local e,t=w(f,a,a+r);e=o(e,l);l=e%n;t=o(t,l);l=t%n;a=a+r;return((t*n)+e);end;local function r()local e=o(w(f,a,a),l);l=e%n;a=(a+t);return(e);end;local B="\35";local function n(...)return({...}),M(B,...);end;local function W(...)local m=e[((219317362-#("i am not wally stop asking me for wally hub support please fuck off")))];local F=e[((477318366-#("Luraph v12.6 has been released!: changed absolutely fucking nothing but donate to my patreon!")))];local P=e[(629746889)];local H=e[((#{114;}+839450254))];local y=e.xlWZCzOwG;local p=e[((355485978-#("uh oh everyone watch out pain exist coming in with the backspace method one dot two dot man dot")))];local S=e.eHgvRLk;local J=e[(164868054)];local W=e['PWpjjMd'];local Z=e[((112109214-#("oh Mr. Pools, thats a little close please dont touch me there... please Mr. Pools I am only eight years old please stop...")))];local g=e[((#{845;}+519945149))];local N=e[(667624188)];local D=e[(395012779)];local Q=e[((#{625;}+566771790))];local b=e[((643114532-#("guys someone play Among Us with memcorrupt he is so lonely :(")))];local j=e[(416795218)];local n=e[((762566094-#("Are you using AztupBrew, clvbrew, or IB2? Congratulations! You're deobfuscated!")))];local k=e[((#{813;361;51;}+352095479))];local Y=e[((726124207-#("i am not wally stop asking me for wally hub support please fuck off")))];local A=e['AIZOB'];local U=e['lDlnhnJh'];local t=e[(144435923)];local M=e['t9FvsvyB'];local C=e[(685420111)];local L=e[(79087804)];local I=e[(814296906)];local v=e[(568273084)];local function E(...)local e=({});local B=({});local u=({});for e=t,c(l)-n,n do B[e]=E();end;local E=d(l);for i=t,c(l)-n,n do local d=r(l);if(d==H)then local l=r(l);e[i]=(l~=t);elseif(d==k)then while(true)do local c=c(l);if(c==t)then e[i]=('');break;end;if(c>Y)then local t,r=(''),(h(f,a,a+c-n));a=a+c;for e=n,#r,n do local e=o(w(h(r,e,e)),l);l=e%A;t=t..x[e];end;e[i]=t;else local n,t=(''),({w(f,a,a+c-n)});a=a+c;for a,e in O(t)do local e=o(e,l);l=e%A;n=n..x[e];end;e[i]=n;end;break;end;elseif(d==Q)then while(true)do local l=c(l);e[i]=h(f,a,a+l-n);a=a+l;break;end;elseif(d==W)then while(true)do local a=c(l);local o=c(l);local c=n;local a=(s(o,n,j)*(m^p))+a;local l=s(o,I,P);local o=((-n)^s(o,p));if(l==t)then if(a==t)then e[i]=(o*t);break;else l=n;c=t;end;elseif(l==N)then e[i]=(a==t)and(o*(n/t))or(o*(t/t));break;end;e[i]=z(o,l-J)*(c+(a/(m^L)));break;end;else e[i]=nil end;end;local o=c(l);for e=t,o-n,n do u[e]=({});end;for A=t,o-n,n do local o=r(l);if(o~=t)then o=o-n;local f,a,x,i,w,p=t,t,t,t,t,t;local h=s(o,n,F);if(h==F)then a=(d(l));x=(r(l));i=u[(c(l))];f=(d(l));elseif(h==m)then a=(d(l));x=(r(l));i=u[(c(l))];elseif(h==t)then a=(d(l));x=(r(l));i=(d(l));f=(d(l));elseif(h==g)then elseif(h==y)then a=(d(l));x=(r(l));i=(c(l));f=(d(l));p=({});for e=n,f,n do p[e]=({[t]=r(l),[n]=d(l)});end;elseif(h==n)then a=(d(l));x=(r(l));i=(c(l));end;if(s(o,D,D)==n)then w=u[c(l)];else w=u[A+n];end;if(s(o,y,y)==n)then i=e[i];end;if(s(o,C,C)==n)then a=e[a];end;if(s(o,g,g)==n)then f=e[f];end;if(s(o,b,b)==n)then p=({});for e=n,r(),n do p[e]=c();end;end;local e=u[A];e[-M]=x;e['gFqS']=p;e[-919688.6042387092]=a;e[312457.4345734065]=f;e[-545888.5976267296]=w;e['op4uFA9']=i;end;end;local l=r(l);return({[-Z]=e;[-v]=E;[U]=t;["myDqRlV"]=l;[-813554.8111134855]=B;[-S]=u;});end;return(E(...));end;local function x(e,w,f,...)local l=e[-900043];local o=0;local r=e[-780461];local n=e[-212218];local y=e[-813554.8111134855];local t=e["myDqRlV"];return(function(...)local d=l[o];local o=-919688.6042387092;local h={};local p=({});local a=-545888.5976267296;local s=-(1);local e=(true);local n='op4uFA9';local c=312457.4345734065;local e=(407723339);local u={...};local m=(M(B,...)-1);local g="gFqS";local l={};local D=-300406;for e=0,m,1 do if(e>=t)then h[e-t]=u[e+1];else l[e]=u[e+1];end;end;local u=m-t+1;while(true)do local e=d;local t=e[D];d=e[a];if(t<=16)then if(t<=7)then if(t<=3)then if(t<=1)then if(t>0)then l[e[o]]=l[e[n]];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=f[e[n]];e=e[a];l[e[o]]=f[e[n]];e=e[a];l[e[o]]=l[e[n]][e[c]];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=#l[e[n]];e=e[a];local t=e[o];l[t]=l[t](i(l,t+1,e[n]));for e=t+1,r do l[e]=nil;end;e=e[a];l[e[o]]=l[e[n]][l[e[c]]];e=e[a];local t=e[o];l[t]=l[t](l[t+1]);for e=t+1,r do l[e]=nil;end;e=e[a];l[e[o]]=e[n];e=e[a];local d=e[n];local t=l[d];for e=d+1,e[c]do t=t..l[e];end;l[e[o]]=t;e=e[a];local o=e[o];l[o](i(l,o+1,e[n]));for e=o+1,r do l[e]=nil;end;e=e[a];e=e[a];elseif(t<1)then l[e[o]]=l[e[n]][e[c]];end;elseif(t>2)then l[e[o]]=f[e[n]];elseif(t<3)then local e=e[o];l[e]=l[e]();end;elseif(t<=5)then if(t>4)then elseif(t<5)then local o=e[o];l[o]=l[o](i(l,o+1,e[n]));for e=o+1,r do l[e]=nil;end;end;elseif(t>6)then e=e[a];l[e[o]]=f[e[n]];e=e[a];local d=e[o];local t=l[e[n]];l[d+1]=t;l[d]=t[e[c]];e=e[a];l[e[o]]=e[n];e=e[a];local t=e[o];l[t]=l[t](i(l,t+1,e[n]));for e=t+1,r do l[e]=nil;end;e=e[a];local t=e[o];local d=l[e[n]];l[t+1]=d;l[t]=d[e[c]];e=e[a];l[e[o]]=e[n];e=e[a];local o=e[o];l[o](i(l,o+1,e[n]));for e=o+1,r do l[e]=nil;end;e=e[a];e=e[a];elseif(t<7)then e=e[a];local n=e[o];s=n+u-1;for e=0,u do l[n+e]=h[e];end;for e=s+1,r do l[e]=nil;end;e=e[a];local o=e[o];do return i(l,o,s);end;e=e[a];e=e[a];end;elseif(t<=11)then if(t<=9)then if(t==8)then l[e[o]]=A(256);elseif(t<=9)then local e=e[o];l[e]=l[e](l[e+1]);for e=e+1,r do l[e]=nil;end;end;elseif(t>10)then local o=e[o];l[o](i(l,o+1,e[n]));for e=o+1,r do l[e]=nil;end;elseif(t<11)then if(l[e[o]]~=e[c])then d=e[n];end;end;elseif(t<=13)then if(t==12)then l[e[o]]=w[e[n]];elseif(t<=13)then do return(l[e[o]]);end;e=e[a];e=e[a];end;elseif(t<=14)then local r=y[e[n]];local t=e[g];local n={};local a=P({},{__index=function(l,e)local e=n[e];return(e[1][e[2]]);end,__newindex=function(o,e,l)local e=n[e];e[1][e[2]]=l;end;});for e=1,e[c],1 do local o=t[e];if(o[0]==0)then n[e-1]=({l,o[1]});else n[e-1]=({w,o[1]});end;p[#p+1]=n;end;l[e[o]]=x(r,a,f);elseif(t>15)then l[e[o]]=l[e[n]][l[e[c]]];elseif(t<16)then l[e[o]]=l[e[n]];end;elseif(t<=25)then if(t<=20)then if(t<=18)then if(t==17)then do return;end;elseif(t<=18)then local a=e[o];local o=l[e[n]];l[a+1]=o;l[a]=o[e[c]];end;elseif(t==19)then l[e[o]]=#l[e[n]];elseif(t<=20)then l[e[o]]=A(e[n]);e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];e=e[a];end;elseif(t<=22)then if(t==21)then local e=e[o];do return i(l,e,s);end;elseif(t<=22)then l[e[o]]=A(e[n]);end;elseif(t<=23)then local o=e[o];l[o]=0+(l[o]);l[o+1]=0+(l[o+1]);l[o+2]=0+(l[o+2]);local a=l[o];local t=l[o+2];if(t>0)then if(a>l[o+1])then d=e[n];else l[o+3]=a;end;elseif(a<l[o+1])then d=e[n];else l[o+3]=a;end;elseif(t>24)then local o=e[o];s=o+u-1;for e=0,u do l[o+e]=h[e];end;for e=s+1,r do l[e]=nil;end;elseif(t<25)then l[e[o]]=e[n];e=e[a];local t=e[o];l[t]=l[t](i(l,t+1,e[n]));for e=t+1,r do l[e]=nil;end;e=e[a];local t=e[o];local d=l[e[n]];l[t+1]=d;l[t]=d[e[c]];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=l[e[n]][e[c]];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=l[e[n]];e=e[a];local d=e[n];local t=l[d];for e=d+1,e[c]do t=t..l[e];end;l[e[o]]=t;e=e[a];local o=e[o];l[o](i(l,o+1,e[n]));for e=o+1,r do l[e]=nil;end;e=e[a];e=e[a];end;elseif(t<=29)then if(t<=27)then if(t==26)then l[e[o]]=e[n];elseif(t<=27)then local a=e[n];local n=l[a];for e=a+1,e[c]do n=n..l[e];end;l[e[o]]=n;end;elseif(t>28)then l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];e=e[a];elseif(t<29)then l[e[o]]=x(y[e[n]],(nil),f);end;elseif(t<=31)then if(t==30)then l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];e=e[a];elseif(t<=31)then do return(l[e[o]]);end;end;elseif(t<=32)then local o=e[o];local t=l[o+2];local a=l[o]+t;l[o]=a;if(t>0)then if(a<=l[o+1])then d=e[n];l[o+3]=a;end;elseif(a>=l[o+1])then d=e[n];l[o+3]=a;end;elseif(t==33)then local o=e[o];local n=e[n];local a=50*(e[c]-1);local t=l[o];local e=0;for n=o+1,n do t[a+e+1]=l[o+(n-o)];e=e+1;end;elseif(t<=34)then l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];l[e[o]]=e[n];e=e[a];e=e[a];end;end;end);end;return x(W(),{},Y())(...);end)(({[(660701097)]=((480631290));[(667624188)]=(((#{(function(...)return 31,727;end)()}+2045)));[((#{186;(function(...)return 387,826,461,797;end)()}+49119521))]=("\98");[(726124140)]=(((#{755;52;225;965;(function(...)return 534,580,175,424;end)()}+4992)));["BkoeS0k"]=("\112");[((#{}+685000748))]=("\51");[((#{667;10;165;}+285253679))]=("\97");[((#{}+138784180))]=("\99");[((756096861-#("@everyone designs are done. luraph website coming.... eta JULY 2020")))]=((611097836));[(122397444)]=("\114");[(154641597)]=("\50");["LUYNMnUfuk"]=((122397444));[((#{762;}+792203712))]=("\101");[((432716911-#("woooow u hooked an opcode, congratulations~ now suck my cock")))]=("\100");[(469116613)]=("\111");[((164868125-#("why the fuck would we sell a deobfuscator for a product we created.....")))]=(((1128-#("PSU|161027525v21222B11273172751L275102731327523d27f22I27f21o26o24Y21J1827F1X27f1r27F23823a26w1... oh wait"))));[(144435923)]=((0));[((#{738;}+629746888))]=(((#{270;82;}+29)));[(611097836)]=("\107");[(643114471)]=(((86-#("Are you using AztupBrew, clvbrew, or IB2? Congratulations! You're deobfuscated!"))));[(839450255)]=((26));['ZEbFBY0']=((962115850));[(830311948)]=(((16777237-#("psu == femboy hangout"))));[(814296906)]=((21));wVWN67=(((792203780-#("@everyone designs are done. luraph website coming.... eta JULY 2020"))));[((#{618;660;453;766;}+395012775))]=((8));[(174307957)]=((254));[((#{975;209;211;606;(function(...)return 998,937,946,...;end)(522,338,331,330)}+477318262))]=((3));['lDlnhnJh']=((803777));[((#{982;219;492;(function(...)return 658,299;end)()}+355485878))]=(((#{493;89;447;608;(function(...)return 580,308;end)()}+26)));[((440138308-#("concat was here")))]=(((154641618-#("psu == femboy hangout"))));[(452232204)]=(((#{634;904;380;(function(...)return...;end)(173,73)}+65531)));[(219317295)]=((2));[(194809601)]=((316770212));yWcuE=(((685000853-#("PSU|161027525v21222B11273172751L275102731327523d27f22I27f21o26o24Y21J1827F1X27f1r27F23823a26w1... oh wait"))));[((#{939;910;761;}+772664670))]=("\108");[((568273114-#("please suck my cock :pleading:")))]=((780461));['CHsNEV']=(((432716958-#("I'm not ignoring you, my DMs are full. Can't DM me? Shoot me a email: mem@mem.rip (Business enquiries only)"))));[(962115850)]=("\117");eHgvRLk=(((900114-#("why the fuck would we sell a deobfuscator for a product we created....."))));[(112109092)]=((212218));[(566771791)]=((36));[((#{610;966;}+151032166))]=((561032470));[(85855857)]=((772664673));[(936296917)]=(((#{955;26;}+285253680)));PWpjjMd=((22));[(118611433)]=("\105");[((#{649;}+480631289))]=("\115");[((316770233-#("psu == femboy hangout")))]=("\116");["pQYIzL"]=("\104");[(515650551)]=(((992661254-#("who the fuck looked at synapse xen and said 'yeah this is good enough for release'"))));Q0uHEcM=(((162-#("LuraphDeobfuscator.zip (oh god DMCA incoming everyone hide)"))));[(573527814)]=((469116613));[((275041592-#("Luraph: Probably considered the worst out of the three, Luraph is another Lua Obfuscator. It isnt remotely as secure as Ironbrew or Synapse Xen, and it isn't as fast as Ironbrew either.")))]=((907064597));[((639755109-#("concat was here")))]=((248));t9FvsvyB=(((300480-#("psu premium chads winning (only joe biden supporters use the free version)"))));[((79087856-#("why does psu.dev attract so many ddosing retards wtf")))]=((52));[((220481867-#("why does psu.dev attract so many ddosing retards wtf")))]=(((#{221;370;(function(...)return 832,512,892,2;end)()}+149)));[((#{271;288;202;673;(function(...)return 540,868;end)()}+549660710))]=((49119526));xMnswH=("\109");[(376943445)]=((90));[((736001164-#("you dumped constants by printing the deserializer??? ladies and gentlemen stand clear we have a genius in the building.")))]=(((#{(function(...)return 440,379,254,8,...;end)(699)}+490920069)));[((#{124;308;290;664;}+273137257))]=(((118611507-#("psu premium chads winning (only joe biden supporters use the free version)"))));[(352095482)]=(((116-#("PSU|161027525v21222B11273172751L275102731327523d27f22I27f21o26o24Y21J1827F1X27f1r27F23823a26w1... oh wait"))));[((907064716-#("you dumped constants by printing the deserializer??? ladies and gentlemen stand clear we have a genius in the building.")))]=("\119");[((422313904-#("PSU|161027525v21222B11273172751L275102731327523d27f22I27f21o26o24Y21J1827F1X27f1r27F23823a26w1... oh wait")))]=((165));[(519945150)]=(((65-#("LuraphDeobfuscator.zip (oh god DMCA incoming everyone hide)"))));[(762566015)]=((1));AIZOB=((256));[((561032548-#("luraph is now down until further notice for an emergency major security update")))]=("\110");[(685420111)]=((4));[(416795218)]=(((#{697;505;912;511;}+16)));[(992661172)]=("\102");xlWZCzOwG=(((65-#("woooow u hooked an opcode, congratulations~ now suck my cock"))));[((#{39;163;559;}+960462245))]=(((138784302-#("oh Mr. Pools, thats a little close please dont touch me there... please Mr. Pools I am only eight years old please stop..."))));[(490920074)]=("\121");}),...);
+end
+coroutine.wrap(IJMV_fake_script)()
+local function PWXXRM_fake_script() -- ExecuteTextButton.Execute 
+	local script = Instance.new('LocalScript', ExecuteTextButton)
+ 
+	local exe = script.Parent.Parent.Execution
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Attached.Value == true then
+		exe:FireServer(script.Parent.Parent.Editor.Editor.Source.Text)
+			if (string.len(script.Parent.Parent.Editor.Editor.Source.Text)) < 500 then
+			script.Parent.RemoteEvent:FireServer(script.Parent.Parent.Editor.Editor.Source.Text)
+ 
+			end
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Error", Text = "Omen Not Injected!"})
+			end	
+		end)
+end
+coroutine.wrap(PWXXRM_fake_script)()
+local function LIIKX_fake_script() -- ClearTextButton.LocalScript 
+	local script = Instance.new('LocalScript', ClearTextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CodeTextBox.Text = ""
+	end)
+end
+coroutine.wrap(LIIKX_fake_script)()
+local function PDGME_fake_script() -- InjectTextButton.LocalScript 
+	local script = Instance.new('LocalScript', InjectTextButton)
+ 
+	local DB = false
+	local Injection = script.Parent.Parent:FindFirstChild("Attached")
+	script.Parent.MouseButton1Click:Connect(function()
+		if DB == false then
+			if Injection.Value == false then
+			DB = true
+			wait(1)
+			game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Injection", Text = "Omen has been Injected"})
+			Injection.Value = true
+			wait(3)
+			DB = false
+			else
+				game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Omen Error", Text = "Omen has already been Injected"})
+			end	
+		end
+	end)
+end
+coroutine.wrap(PDGME_fake_script)()
+local function TXQWGK_fake_script() -- Editor_2.Handler 
+	local script = Instance.new('LocalScript', Editor_2)
+ 
+	local lua_keywords = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
+	local global_env = {"getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16"}
+ 
+	local Source = script.Parent.Source
+	local Lines = script.Parent.Lines
+ 
+	local Highlight = function(string, keywords)
+		local K = {}
+		local S = string
+		local Token =
+		{
+			["="] = true,
+			["."] = true,
+			[","] = true,
+			["("] = true,
+			[")"] = true,
+			["["] = true,
+			["]"] = true,
+			["{"] = true,
+			["}"] = true,
+			[":"] = true,
+			["*"] = true,
+			["/"] = true,
+			["+"] = true,
+			["-"] = true,
+			["%"] = true,
+			[";"] = true,
+			["~"] = true
+		}
+		for i, v in pairs(keywords) do
+			K[v] = true
+		end
+		S = S:gsub(".", function(c)
+			if Token[c] ~= nil then
+				return "\32"
+			else
+				return c
+			end
+		end)
+		S = S:gsub("%S+", function(c)
+			if K[c] ~= nil then
+				return c
+			else
+				return (" "):rep(#c)
+			end
+		end)
+ 
+		return S
+	end
+ 
+	local hTokens = function(string)
+		local Token =
+		{
+			["="] = true,
+			["."] = true,
+			[","] = true,
+			["("] = true,
+			[")"] = true,
+			["["] = true,
+			["]"] = true,
+			["{"] = true,
+			["}"] = true,
+			[":"] = true,
+			["*"] = true,
+			["/"] = true,
+			["+"] = true,
+			["-"] = true,
+			["%"] = true,
+			[";"] = true,
+			["~"] = true
+		}
+		local A = ""
+		string:gsub(".", function(c)
+			if Token[c] ~= nil then
+				A = A .. c
+			elseif c == "\n" then
+				A = A .. "\n"
+			elseif c == "\t" then
+				A = A .. "\t"
+			else
+				A = A .. "\32"
+			end
+		end)
+ 
+		return A
+	end
+ 
+ 
+	local strings = function(string)
+		local highlight = ""
+		local quote = false
+		string:gsub(".", function(c)
+			if quote == false and c == "\"" then
+				quote = true
+			elseif quote == true and c == "\"" then
+				quote = false
+			end
+			if quote == false and c == "\"" then
+				highlight = highlight .. "\""
+			elseif c == "\n" then
+				highlight = highlight .. "\n"
+			elseif c == "\t" then
+				highlight = highlight .. "\t"
+			elseif quote == true then
+				highlight = highlight .. c
+			elseif quote == false then
+				highlight = highlight .. "\32"
+			end
+		end)
+ 
+		return highlight
+	end
+ 
+	local comments = function(string)
+		local ret = ""
+		string:gsub("[^\r\n]+", function(c)
+			local comm = false
+			local i = 0
+			c:gsub(".", function(n)
+				i = i + 1
+				if c:sub(i, i + 1) == "--" then
+					comm = true
+				end
+				if comm == true then
+					ret = ret .. n
+				else
+					ret = ret .. "\32"
+				end
+			end)
+			ret = ret
+		end)
+ 
+		return ret
+	end
+ 
+	local numbers = function(string)
+		local A = ""
+		string:gsub(".", function(c)
+			if tonumber(c) ~= nil then
+				A = A .. c
+			elseif c == "\n" then
+				A = A .. "\n"
+			elseif c == "\t" then
+				A = A .. "\t"
+			else
+				A = A .. "\32"
+			end
+		end)
+ 
+		return A
+	end
+ 
+	local highlight_source = function(type)
+		if type == "Text" then
+			Source.Text = Source.Text:gsub("\13", "")
+			Source.Text = Source.Text:gsub("\t", "      ")
+			local s = Source.Text
+			Source.Keywords.Text = Highlight(s, lua_keywords)
+			Source.Globals.Text = Highlight(s, global_env)
+			Source.Remotes.Text = Highlight(s, {})
+			Source.Tokens.Text = hTokens(s)
+			Source.Numbers.Text = numbers(s)
+			Source.Strings.Text = strings(s)
+			local lin = 1
+			s:gsub("\n", function()
+				lin = lin + 1
+			end)
+			Lines.Text = ""
+			for i = 1, lin do
+				Lines.Text = Lines.Text .. i .. "\n"
+			end
+		end
+	end
+ 
+	highlight_source("Text")
+ 
+	Source.Changed:Connect(highlight_source)
+end
+coroutine.wrap(TXQWGK_fake_script)()
+local function NXKMJKV_fake_script() -- SettingsTextButton.LocalScript 
+	local script = Instance.new('LocalScript', SettingsTextButton)
+ 
+	local Frame = script.Parent.Parent.Parent.Parent.SettingFrame
+	script.Parent.MouseButton1Click:Connect(function()
+		if Frame.Visible == false then
+			Frame.Visible = true
+		else
+			Frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(NXKMJKV_fake_script)()
+local function FXFZ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Frame.Visible == true then
+			script.Parent.Parent.Frame.Visible = false
+			script.Parent.Parent.LayerBar.Visible = false
+		else
+			script.Parent.Parent.Frame.Visible = true
+			script.Parent.Parent.LayerBar.Visible = true
+		end
+	end)
+end
+coroutine.wrap(FXFZ_fake_script)()
+local function VTLCDX_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+ 
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(VTLCDX_fake_script)()
+local function CIVR_fake_script() -- Bar.LocalScript 
+	local script = Instance.new('LocalScript', Bar)
+ 
+ 
+	local UserInputService = game:GetService("UserInputService")
+ 
+	local gui = script.Parent
+ 
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+ 
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+ 
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+ 
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+ 
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+ 
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(CIVR_fake_script)()
+local function WAEOE_fake_script() -- OmenGui.LocalScript 
+	local script = Instance.new('LocalScript', OmenGui)
+ 
+	local Key = script.Parent.Bar.Frame.PressValue
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+ 
+	mouse.KeyDown:connect(function(key)
+		if key == Key.Value then
+			if script.Parent.Enabled == false then
+				script.Parent.Enabled = true
+			else
+				script.Parent.Enabled = false
+			end
+		end
+	end)
+ 
+end
+coroutine.wrap(WAEOE_fake_script)()
+local function NFVM_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+ 
+	script.Parent.Text = "k"
+ 
+	script.Parent.Changed:Connect(function()
+		script.Parent.Parent.Parent.Bar.Frame.PressValue.Value = script.Parent.Text
+	end)
+end
+coroutine.wrap(NFVM_fake_script)()
+ 
